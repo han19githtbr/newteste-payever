@@ -1,9 +1,11 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+
 import {
   ChangeDetectionStrategy,
   ViewChild,
   TemplateRef
 } from '@angular/core';
+
 import {
   startOfDay,
   endOfDay,
@@ -14,14 +16,18 @@ import {
   isSameMonth,
   addHours
 } from 'date-fns';
+
 import { Subject } from 'rxjs';
+
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
 import {
   CalendarEvent,
   CalendarEventAction,
   CalendarEventTimesChangedEvent,
   CalendarView
 } from 'angular-calendar';
+
 import { EventColor } from 'calendar-utils';
 
 const colors: Record<string, EventColor> = {
@@ -45,6 +51,7 @@ const colors: Record<string, EventColor> = {
   templateUrl: './calendar.component.html',
   styleUrls: ['./calendar.component.scss']
 })
+
 export class CalendarComponent {
   @ViewChild('modalContent', { static: true }) modalContent: TemplateRef<any> | undefined;
 
@@ -165,7 +172,7 @@ export class CalendarComponent {
     this.events = [
       ...this.events,
       {
-        title: 'New event',
+        title: 'New appointment',
         start: startOfDay(new Date()),
         end: endOfDay(new Date()),
         color: colors['red'],
