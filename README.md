@@ -28,7 +28,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Pictures's App
 
-<img width="870" src="src/assets/print1.jpg"></img>
+<img width="870" padding="4px" src="src/assets/print1.jpg"></img>
 <img width="870" src="src/assets/print2.jpg"></img>
 <img width="870" src="src/assets/print3.jpg"></img>
 <img width="870" src="src/assets/print4.jpg"></img>
