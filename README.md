@@ -28,4 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Prints de telas
 
-<img width="470" src="src/assets/print1.jpg"></img>
+<img width="670" src="src/assets/print1.jpg"></img>
